@@ -14,7 +14,7 @@ namespace website_Checker_GUI
     {
 
 
-        internal const string RequestUri = "http://www.google.de";
+
         internal const string server = "smtp.gmail.com";
 
         internal static void CreateMessage(string server)
@@ -53,8 +53,6 @@ namespace website_Checker_GUI
 
 
                     isReachable = true;
-
-
 
                 }
 
