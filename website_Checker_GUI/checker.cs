@@ -41,34 +41,37 @@ namespace website_Checker_GUI
         internal static bool checkWebsiteStatus(string domain)
         {
             bool isReachable = false;
+            HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create(domain);
+            httpReq.AllowAutoRedirect = false;
+
             try
             {
-                HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create(domain);
-                httpReq.AllowAutoRedirect = false;
                 HttpWebResponse httpRes = (HttpWebResponse)httpReq.GetResponse();
+
                 if (httpRes.StatusCode != HttpStatusCode.NotFound)
                 {
 
-                    Console.WriteLine("It works");
+
                     isReachable = true;
-                     
+
 
 
                 }
+
                 httpRes.Close();
+
+
 
             }
             catch (System.Exception)
             {
-                Console.WriteLine("Not working !");
+
                 isReachable = false;
-                CreateMessage(server);
-              
+
+
             }
 
 
-
-            // Close the response.
 
             return isReachable;
 

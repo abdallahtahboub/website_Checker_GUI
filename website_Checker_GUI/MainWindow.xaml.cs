@@ -55,22 +55,26 @@ namespace website_Checker_GUI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
 
             test1 = test.Text;
             bool testme = checker.checkWebsiteStatus(test1);
             if (testme == true)
             {
                 alarm_1.Background = new SolidColorBrush(Colors.Green);
-                alarm_1.Visibility = Visibility.Visible ;
+                alarm_1.Visibility = Visibility.Visible;
 
             }
+         
 
             if (testme == false)
             {
                 alarm_1.Background = new SolidColorBrush(Colors.Red);
                 alarm_1.Visibility = Visibility.Visible;
-
+                string myserver = checker.server;
+                checker.CreateMessage(myserver);
             }
+
 
         }
 

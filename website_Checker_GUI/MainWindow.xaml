@@ -42,6 +42,14 @@
         <Label Content="Domain" HorizontalAlignment="Left" Margin="188,23,0,0" VerticalAlignment="Top" Width="397" FontFamily="Segoe UI Semibold" Height="26" Grid.ColumnSpan="2"/>
         <Label Content="Status" HorizontalAlignment="Left" Margin="26,23,0,0" VerticalAlignment="Top" Width="108" FontFamily="Segoe UI Semibold" Height="26"/>
         <Label Content="Minuten" HorizontalAlignment="Left" Margin="65,23,0,0" VerticalAlignment="Top" Width="52" FontFamily="Segoe UI Semibold" Height="26" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Label Content="" Name="alarm_1"  HorizontalAlignment="Left" Margin="26,57,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label Content="" Name="alarm_1"  HorizontalAlignment="Left" Margin="26,60,0,0" VerticalAlignment="Top" Width="73" Height="23"/>
+        <Label Content="" x:Name="alarm_1_Copy"  HorizontalAlignment="Left" Margin="26,88,0,0" VerticalAlignment="Top" Width="73" Height="23"/>
+        <Label Content="" x:Name="alarm_1_Copy1"  HorizontalAlignment="Left" Margin="26,116,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23"/>
+        <Label Content="" x:Name="alarm_1_Copy2"  HorizontalAlignment="Left" Margin="26,144,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.RowSpan="2"/>
+        <Label Content="" x:Name="alarm_1_Copy3"  HorizontalAlignment="Left" Margin="26,12,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1"/>
+        <Label Content="" x:Name="alarm_1_Copy4"  HorizontalAlignment="Left" Margin="26,47,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1"/>
+        <Label Content="" x:Name="alarm_1_Copy5"  HorizontalAlignment="Left" Margin="26,68,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1"/>
+        <Label Content="" x:Name="alarm_1_Copy6"  HorizontalAlignment="Left" Margin="26,96,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1"/>
+        <Label Content="" x:Name="alarm_1_Copy7"  HorizontalAlignment="Left" Margin="26,124,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1"/>
     </Grid>
 </Window>
