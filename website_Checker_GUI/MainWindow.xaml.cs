@@ -103,6 +103,7 @@ namespace website_Checker_GUI
                 website_1.Background = new SolidColorBrush(Colors.Red);
                 website_1.Visibility = Visibility.Visible;
                 string myserver = checker.server;
+                info_1.Content = "Site ist nicht aufrufbar!";
                 info_1.Foreground = new SolidColorBrush(Colors.Red);
                 info_1.Visibility = Visibility.Visible;
                 checker.CreateMessage(myserver);
