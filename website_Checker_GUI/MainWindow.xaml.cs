@@ -20,17 +20,61 @@ namespace website_Checker_GUI
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        string test1;
+
+
+
+
         public MainWindow()
         {
             InitializeComponent();
+            alarm_1.Visibility = Visibility.Hidden;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
+        {
+
+
+
+
+
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            test1 = test.Text;
+            bool testme = checker.checkWebsiteStatus(test1);
+            if (testme == true)
+            {
+                alarm_1.Background = new SolidColorBrush(Colors.Green);
+                alarm_1.Visibility = Visibility.Visible ;
+
+            }
+
+            if (testme == false)
+            {
+                alarm_1.Background = new SolidColorBrush(Colors.Red);
+                alarm_1.Visibility = Visibility.Visible;
+
+            }
+
+        }
+
+        private void TextBox_TextChanged_3(object sender, TextChangedEventArgs e)
         {
 
         }

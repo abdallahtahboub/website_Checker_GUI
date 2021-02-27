@@ -7,33 +7,41 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="0,0,-27.667,0.333">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160*"/>
+            <RowDefinition Height="261*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="552*"/>
             <ColumnDefinition Width="65*"/>
             <ColumnDefinition Width="204*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Check Websites" HorizontalAlignment="Left" VerticalAlignment="Top" Width="99" Margin="72.667,23,0,0" Height="26" RenderTransformOrigin="0.412,-0.28" FontFamily="Segoe UI Semibold" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,60,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2"/>
+        <Button Content="Check Websites" HorizontalAlignment="Left" VerticalAlignment="Top" Width="99" Margin="72.667,23,0,0" Height="26" RenderTransformOrigin="0.412,-0.28" FontFamily="Segoe UI Semibold" Grid.Column="2" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Name="test" Margin="188,60,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged_3">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="188,88,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,284,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,256,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,228,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,200,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,123.833,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,95.833,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,67.833,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,39.833,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="2" Grid.Row="1"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="188,116,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,172,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,144,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,11.833,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="188,144,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,60,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" Grid.Column="2"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,88,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,116,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,151,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,178,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,207,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,235,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,256,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,284,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,151,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,17.833,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,46.833,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,74.833,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,95.833,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="0.667,123.833,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="2" Grid.Row="1"/>
         <Label Content="Domain" HorizontalAlignment="Left" Margin="188,23,0,0" VerticalAlignment="Top" Width="397" FontFamily="Segoe UI Semibold" Height="26" Grid.ColumnSpan="2"/>
         <Label Content="Status" HorizontalAlignment="Left" Margin="26,23,0,0" VerticalAlignment="Top" Width="108" FontFamily="Segoe UI Semibold" Height="26"/>
         <Label Content="Minuten" HorizontalAlignment="Left" Margin="65,23,0,0" VerticalAlignment="Top" Width="52" FontFamily="Segoe UI Semibold" Height="26" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Label Content=""  HorizontalAlignment="Left" Margin="26,57,0,0" VerticalAlignment="Top" Width="73" Background="#FFEB1111"/>
+        <Label Content="" Name="alarm_1"  HorizontalAlignment="Left" Margin="26,57,0,0" VerticalAlignment="Top" Width="73"/>
     </Grid>
 </Window>
