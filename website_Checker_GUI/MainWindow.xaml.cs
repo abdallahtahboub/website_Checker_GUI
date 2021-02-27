@@ -93,6 +93,7 @@ namespace website_Checker_GUI
             {
                 website_1.Background = new SolidColorBrush(Colors.Green);
                 website_1.Visibility = Visibility.Visible;
+                info_1.Content = "Site funktioniert!";
                 info_1.Foreground = new SolidColorBrush(Colors.Green);
                 info_1.Visibility = Visibility.Visible;
 

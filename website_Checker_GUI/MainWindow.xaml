@@ -52,6 +52,6 @@
         <Label Content="" Name="website_7"  HorizontalAlignment="Left" Margin="26,68,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2"/>
         <Label Content="" Name="website_8"  HorizontalAlignment="Left" Margin="26,96,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2"/>
         <Label Content="" Name="website_9"  HorizontalAlignment="Left" Margin="26,124,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <Label Content="Site funktioniert" HorizontalAlignment="Left" Name="info_1" VerticalAlignment="Top" Margin="58.307,58,0,0" Width="94" Height="25" Grid.Column="3"/>
+        <Label Content="" HorizontalAlignment="Left" Name="info_1" VerticalAlignment="Top" Margin="58.307,58,0,0" Width="94" Height="25" Grid.Column="3"/>
     </Grid>
 </Window>
