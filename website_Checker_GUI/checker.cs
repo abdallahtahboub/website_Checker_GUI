@@ -38,21 +38,30 @@ namespace website_Checker_GUI
 
         }
 
-        internal static bool checkWebsiteStatus(string domain)
+        internal static int checkWebsiteStatus(string domain)
         {
-            bool isReachable = false;
+            int isReachable = 0;
+
+
+            if (!domain.Contains("http://www.") || domain == string.Empty || !domain.Contains(".com"))
+            {
+                return isReachable;
+            }
+
             HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create(domain);
             httpReq.AllowAutoRedirect = false;
 
             try
             {
+
                 HttpWebResponse httpRes = (HttpWebResponse)httpReq.GetResponse();
 
                 if (httpRes.StatusCode != HttpStatusCode.NotFound)
                 {
 
 
-                    isReachable = true;
+                    isReachable = 1;
+                    return isReachable;
 
                 }
 
@@ -64,7 +73,8 @@ namespace website_Checker_GUI
             catch (System.Exception)
             {
 
-                isReachable = false;
+                isReachable = 2;
+                return isReachable;
 
 
             }

@@ -56,10 +56,6 @@ namespace website_Checker_GUI
         {
 
 
-
-
-
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -79,17 +75,26 @@ namespace website_Checker_GUI
 
 
 
-            bool test_1 = checker.checkWebsiteStatus(d_1);
-            bool test_2 = checker.checkWebsiteStatus(d_2);
-            bool test_3 = checker.checkWebsiteStatus(d_3);
-            bool test_4 = checker.checkWebsiteStatus(d_4);
-            bool test_5 = checker.checkWebsiteStatus(d_5);
-            bool test_6 = checker.checkWebsiteStatus(d_6);
-            bool test_7 = checker.checkWebsiteStatus(d_7);
-            bool test_8 = checker.checkWebsiteStatus(d_8);
-            bool test_9 = checker.checkWebsiteStatus(d_9);
+            int test_1 = checker.checkWebsiteStatus(d_1);
+            int test_2 = checker.checkWebsiteStatus(d_2);
+            int test_3 = checker.checkWebsiteStatus(d_3);
+            int test_4 = checker.checkWebsiteStatus(d_4);
+            int test_5 = checker.checkWebsiteStatus(d_5);
+            int test_6 = checker.checkWebsiteStatus(d_6);
+            int test_7 = checker.checkWebsiteStatus(d_7);
+            int test_8 = checker.checkWebsiteStatus(d_8);
+            int test_9 = checker.checkWebsiteStatus(d_9);
 
-            if (test_1 == true)
+            if (test_1 == 0)
+            {
+                website_1.Background = new SolidColorBrush(Colors.Black);
+                website_1.Visibility = Visibility.Visible;
+                info_1.Content = "Bitte website eintragen!";
+                info_1.Foreground = new SolidColorBrush(Colors.Orange);
+                info_1.Visibility = Visibility.Visible;
+
+            }
+            if (test_1 == 1)
             {
                 website_1.Background = new SolidColorBrush(Colors.Green);
                 website_1.Visibility = Visibility.Visible;
@@ -98,7 +103,7 @@ namespace website_Checker_GUI
                 info_1.Visibility = Visibility.Visible;
 
             }
-            if (test_1 == false)
+            if (test_1 == 2)
             {
                 website_1.Background = new SolidColorBrush(Colors.Red);
                 website_1.Visibility = Visibility.Visible;
@@ -114,6 +119,15 @@ namespace website_Checker_GUI
             //    website_2.Background = new SolidColorBrush(Colors.Green);
             //    website_2.Visibility = Visibility.Visible;
 
+            //}
+
+
+            //if (test_2 == false)
+            //{
+            //    website_2.Background = new SolidColorBrush(Colors.Red);
+            //    website_2.Visibility = Visibility.Visible;
+            //    string myserver = checker.server;
+            //    //checker.CreateMessage(myserver);
             //}
             //if (test_3 == true)
             //{
@@ -162,61 +176,54 @@ namespace website_Checker_GUI
 
 
 
-            //if (test_2 == false)
-            //{
-            //    website_2.Background = new SolidColorBrush(Colors.Red);
-            //    website_2.Visibility = Visibility.Visible;
-            //    string myserver = checker.server;
-            //    checker.CreateMessage(myserver);
-            //}
             //if (test_3 == false)
             //{
             //    website_3.Background = new SolidColorBrush(Colors.Red);
             //    website_3.Visibility = Visibility.Visible;
             //    string myserver = checker.server;
-            //    checker.CreateMessage(myserver);
+            //    // checker.CreateMessage(myserver);
             //}
             //if (test_4 == false)
             //{
             //    website_4.Background = new SolidColorBrush(Colors.Red);
             //    website_4.Visibility = Visibility.Visible;
             //    string myserver = checker.server;
-            //    checker.CreateMessage(myserver);
+            //    // checker.CreateMessage(myserver);
             //}
             //if (test_5 == false)
             //{
             //    website_5.Background = new SolidColorBrush(Colors.Red);
             //    website_5.Visibility = Visibility.Visible;
             //    string myserver = checker.server;
-            //    checker.CreateMessage(myserver);
+            //    // checker.CreateMessage(myserver);
             //}
             //if (test_6 == false)
             //{
             //    website_6.Background = new SolidColorBrush(Colors.Red);
             //    website_6.Visibility = Visibility.Visible;
             //    string myserver = checker.server;
-            //    checker.CreateMessage(myserver);
+            //    // checker.CreateMessage(myserver);
             //}
             //if (test_7 == false)
             //{
             //    website_7.Background = new SolidColorBrush(Colors.Red);
             //    website_7.Visibility = Visibility.Visible;
             //    string myserver = checker.server;
-            //    checker.CreateMessage(myserver);
+            //    //checker.CreateMessage(myserver);
             //}
             //if (test_8 == false)
             //{
             //    website_8.Background = new SolidColorBrush(Colors.Red);
             //    website_8.Visibility = Visibility.Visible;
             //    string myserver = checker.server;
-            //    checker.CreateMessage(myserver);
+            //    //checker.CreateMessage(myserver);
             //}
             //if (test_9 == false)
             //{
             //    website_9.Background = new SolidColorBrush(Colors.Red);
             //    website_9.Visibility = Visibility.Visible;
             //    string myserver = checker.server;
-            //    checker.CreateMessage(myserver);
+            //    //checker.CreateMessage(myserver);
             //}
 
 
