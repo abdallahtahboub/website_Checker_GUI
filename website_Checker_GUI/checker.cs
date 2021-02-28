@@ -17,22 +17,39 @@ namespace website_Checker_GUI
 
         internal const string server = "smtp.gmail.com";
 
-        internal static void CreateMessage(string server)
+        internal static int CreateMessage(string server)
         {
 
             string to = "tahboub252@gmail.com";
             string from = "tahboub252@gmail.com";
             string subject = "Alert!!";
             string body = "The Website might not be working. Check it.";
-            SmtpClient client = new SmtpClient(server)
+
+
+            try
             {
 
-                Port = 587,
-                Credentials = new NetworkCredential("tahboub252@gmail.com", "lifehaschanged1"),
-                EnableSsl = true,
+                SmtpClient client = new SmtpClient(server)
+                {
 
-            };
-            client.Send(from, to, subject, body);
+                    Port = 587,
+                    Credentials = new NetworkCredential("tahboub252@gmail.com", "lifehaschanged1"),
+                    EnableSsl = true,
+
+                };
+                client.Send(from, to, subject, body);
+                return 1;
+            }
+            catch (Exception)
+            {
+
+                // to do: showing error when chtching a problem
+                System.Windows.Application.Current.Shutdown();
+
+                return 0;
+            }
+
+
 
 
 
@@ -43,7 +60,7 @@ namespace website_Checker_GUI
             int isReachable = 0;
 
 
-            if (!domain.Contains("http://www.") || domain == string.Empty || !domain.Contains(".com"))
+            if (!domain.Contains("http://www.") || domain == string.Empty)
             {
                 return isReachable;
             }
