@@ -58,7 +58,7 @@ namespace website_Checker_GUI
             int isReachable = 0;
 
 
-            if (domain.Contains("http://www.") || domain == string.Empty)
+            if (!domain.Contains("http://www.") || domain == string.Empty|| domain == "http://www.")
             {
                 return isReachable;
             }

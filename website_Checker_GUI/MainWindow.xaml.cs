@@ -22,10 +22,6 @@ namespace website_Checker_GUI
     {
 
 
-
-
-
-
         public MainWindow()
         {
             InitializeComponent();
@@ -39,7 +35,7 @@ namespace website_Checker_GUI
             website_8.Visibility = Visibility.Hidden;
             website_9.Visibility = Visibility.Hidden;
             info_1.Visibility = Visibility.Hidden;
-         
+
 
 
         }
