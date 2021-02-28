@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Http;
 using System.Net.Mail;
-
+using System.Windows;
 
 namespace website_Checker_GUI
 {
@@ -33,25 +33,23 @@ namespace website_Checker_GUI
                 {
 
                     Port = 587,
-                    Credentials = new NetworkCredential("tahboub252@gmail.com", "lifehaschanged1"),
+                    Credentials = new NetworkCredential("tahboub252@gmail.com", "liefehaschanged1"),
                     EnableSsl = true,
 
                 };
                 client.Send(from, to, subject, body);
                 return 1;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 // to do: showing error when chtching a problem
-                System.Windows.Application.Current.Shutdown();
+                //System.Windows.Application.Current.Shutdown();
+                MessageBox.Show("A handled exception just occurred: " + ex.Message, "Exception Sample", MessageBoxButton.OK, MessageBoxImage.Warning);
+
 
                 return 0;
             }
-
-
-
-
 
         }
 

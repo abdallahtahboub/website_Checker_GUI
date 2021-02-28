@@ -237,6 +237,7 @@ namespace website_Checker_GUI
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
+
         }
     }
 }
