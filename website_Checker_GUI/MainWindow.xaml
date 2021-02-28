@@ -54,7 +54,12 @@
         <Label Content="" Name="website_9"  HorizontalAlignment="Left" Margin="26,124,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2"/>
         <Label Content="" HorizontalAlignment="Left" Name="info_1" VerticalAlignment="Top" Margin="58.307,58,-59.307,0" Width="205" Height="25" Grid.Column="3"/>
         <Button Content="Schließen" Name="btnExit" Grid.Column="3" HorizontalAlignment="Left" Margin="64.307,211,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="btnExit_Click"/>
-        
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="72.667,215,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90"/>
+        <Label Grid.Column="1" Name="noContent_1" HorizontalAlignment="Left" Margin="72.667,211,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90" RenderTransformOrigin="2.841,0.806">
+            <Label Content="" Name="noContent_2" Width="80"/>
+        </Label>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="257.667,215,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90"/>
+
     </Grid>
-  
+
 </Window>

@@ -33,7 +33,7 @@ namespace website_Checker_GUI
                 {
 
                     Port = 587,
-                    Credentials = new NetworkCredential("tahboub252@gmail.com", "liefehaschanged1"),
+                    Credentials = new NetworkCredential("tahboub252@gmail.com", "lifehaschanged1"),
                     EnableSsl = true,
 
                 };
@@ -58,7 +58,7 @@ namespace website_Checker_GUI
             int isReachable = 0;
 
 
-            if (!domain.Contains("http://www.") || domain == string.Empty)
+            if (domain.Contains("http://www.") || domain == string.Empty)
             {
                 return isReachable;
             }

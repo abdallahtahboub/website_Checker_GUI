@@ -39,6 +39,9 @@ namespace website_Checker_GUI
             website_8.Visibility = Visibility.Hidden;
             website_9.Visibility = Visibility.Hidden;
             info_1.Visibility = Visibility.Hidden;
+         
+
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -60,6 +63,11 @@ namespace website_Checker_GUI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            noContent_1.Visibility = Visibility.Visible;
+            noContent_1.Foreground = new SolidColorBrush(Colors.Red);
+            noContent_2.Visibility = Visibility.Visible;
+            noContent_2.Foreground = new SolidColorBrush(Colors.Black);
 
 
             string d_1 = domain_1.Text;
@@ -89,7 +97,7 @@ namespace website_Checker_GUI
             {
                 website_1.Background = new SolidColorBrush(Colors.Black);
                 website_1.Visibility = Visibility.Visible;
-                info_1.Content = "Bitte website eintragen!";
+                info_1.Content = "Bitte Domain eintragen!";
                 info_1.Foreground = new SolidColorBrush(Colors.Orange);
                 info_1.Visibility = Visibility.Visible;
 
