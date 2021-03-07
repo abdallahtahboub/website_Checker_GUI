@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Net;
-using System.Net.Http;
 using System.Net.Mail;
 using System.Windows;
+using System.Threading;
 
 namespace website_Checker_GUI
 {
@@ -45,7 +41,7 @@ namespace website_Checker_GUI
 
                 // to do: showing error when chtching a problem
                 //System.Windows.Application.Current.Shutdown();
-                MessageBox.Show("A handled exception just occurred: " + ex.Message, "Exception Sample", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Authintication Error: " + ex.Message, "Exception Sample", MessageBoxButton.OK, MessageBoxImage.Warning);
 
 
                 return 0;
@@ -58,7 +54,7 @@ namespace website_Checker_GUI
             int isReachable = 0;
 
 
-            if (!domain.Contains("http://www.") || domain == string.Empty|| domain == "http://www.")
+            if (!domain.Contains("http://www.") || domain == string.Empty || domain == "http://www.")
             {
                 return isReachable;
             }

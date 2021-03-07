@@ -13,5 +13,6 @@ namespace website_Checker_GUI
     /// </summary>
     public partial class App : Application
     {
+
     }
 }
