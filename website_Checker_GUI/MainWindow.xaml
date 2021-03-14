@@ -1,9 +1,10 @@
-﻿<Window x:Class="website_Checker_GUI.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:website_Checker_GUI"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="website_Checker_GUI.MainWindow"
         mc:Ignorable="d"
         Title="Alarm Checker" Height="450" Width="800">
     <Viewbox Margin="0,0,-27.667,0.333" Stretch="Fill">
@@ -34,15 +35,15 @@
             <TextBox HorizontalAlignment="Left" Height="23" x:Name="domain_3" Margin="5.666,116,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" Grid.Column="3"/>
             <TextBox HorizontalAlignment="Left" Height="23" x:Name="domain_5" Margin="5.666,12,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="3"/>
             <TextBox HorizontalAlignment="Left" Height="23" x:Name="domain_4" Margin="5.666,144,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="3"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Name="minutes" Margin="0.306,60,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" Grid.Column="5"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,88,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,116,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,151,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.RowSpan="2"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,18,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.Row="1"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,47,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.Row="1"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,75,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.Row="1"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,96,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.Row="1"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,124,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.Row="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" x:Name="minutes" Margin="0.306,60,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" Grid.Column="5"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,88,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,116,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,151,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.RowSpan="2"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,18,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.Row="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,47,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.Row="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,75,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.Row="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,96,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.Row="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="0.306,124,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="5" Grid.Row="1"/>
             <Label Content="Domain" HorizontalAlignment="Left" Margin="5.666,23,0,0" VerticalAlignment="Top" Width="397" FontFamily="Segoe UI Semibold" Height="26" Grid.ColumnSpan="2" Grid.Column="3"/>
             <Label Content="Status" HorizontalAlignment="Left" Margin="15.333,23,0,0" VerticalAlignment="Top" Width="108" FontFamily="Segoe UI Semibold" Height="26" Grid.ColumnSpan="2" Grid.Column="1"/>
             <Label Content="Minuten" HorizontalAlignment="Left" Margin="0.306,23,0,0" VerticalAlignment="Top" Width="64" FontFamily="Segoe UI Semibold" Height="26" Grid.Column="5" RenderTransformOrigin="0.974,0.654"/>
@@ -54,8 +55,8 @@
             <Label Content="" x:Name="website_6"  HorizontalAlignment="Left" Margin="15.333,40,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
             <Label Content="" x:Name="website_7"  HorizontalAlignment="Left" Margin="15.333,68,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
             <Label Content="" x:Name="website_8"  HorizontalAlignment="Left" Margin="15.333,96,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
-            <Label Content="" x:Name="website_9"  HorizontalAlignment="Left" Margin="15.333,124,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
-            <Label Content="" HorizontalAlignment="Left" x:Name="info_1" VerticalAlignment="Top" Margin="58.306,58,-59.306,0" Width="205" Height="25" Grid.Column="5"/>
+            <Label Content="" x:Name="website_9"  HorizontalAlignment="Left" Margin="15.667,124,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
+            <Label HorizontalAlignment="Left" x:Name="info_1" VerticalAlignment="Top" Margin="58.306,58,-59.306,0" Width="205" Height="25" Grid.Column="5"/>
 
             <Button Content="Schließen"  x:Name="btnExit" Grid.Column="5" HorizontalAlignment="Left" Margin="64.306,211,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="btnExit_Click"/>
             <Label Grid.Column="2" HorizontalAlignment="Left" Margin="72.666,215,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90" Grid.ColumnSpan="2"/>
@@ -63,19 +64,18 @@
                 <Label Content="" x:Name="noContent_2" Width="80"/>
             </Label>
             <Label Grid.Column="3" HorizontalAlignment="Left" Margin="151.666,215,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90"/>
-            <Viewbox HorizontalAlignment="Left" Height="34" Margin="134,176,0,0" VerticalAlignment="Top" Width="108" Grid.Column="3" Grid.Row="1" Stretch="Fill">
-                <Image Source="/images/comdfoto.png" x:Name="comdfoto" RenderTransformOrigin="-2.054,-2.167" AutomationProperties.Name="comdfoto" Height="34" Width="108"/>
-
-            </Viewbox>
-            <Label Content="" HorizontalAlignment="Left" x:Name="info_1_Copy" VerticalAlignment="Top" Margin="58.667,114,-59.667,0" Width="205" Height="25" Grid.Column="5"/>
-            <Label Content="" HorizontalAlignment="Left" x:Name="info_1_Copy1" VerticalAlignment="Top" Margin="64.667,151,-65.667,0" Width="205" Height="25" Grid.Column="5" Grid.RowSpan="2"/>
-            <Label Content="" HorizontalAlignment="Left" x:Name="info_1_Copy2" VerticalAlignment="Top" Margin="64.667,18,-65.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
-            <Label Content="" HorizontalAlignment="Left" x:Name="info_1_Copy3" VerticalAlignment="Top" Margin="64.667,48,-65.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
-            <Label Content="" HorizontalAlignment="Left" x:Name="info_1_Copy4" VerticalAlignment="Top" Margin="64.667,78,-65.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
-            <Label Content="" HorizontalAlignment="Left" x:Name="info_1_Copy5" VerticalAlignment="Top" Margin="64.667,96,-65.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
-            <Label Content="" HorizontalAlignment="Left" x:Name="info_1_Copy6" VerticalAlignment="Top" Margin="64.667,126,-65.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
-            <Label Content="" Name="website_2" HorizontalAlignment="Left" x:Name="info_1_Copy7" VerticalAlignment="Top" Margin="64.667,89,-65.667,0" Width="205" Height="25" Grid.Column="5"/>
-
+            <Label HorizontalAlignment="Left" x:Name="info_2" VerticalAlignment="Top" Margin="58.667,88,-59.667,0" Width="205" Height="25" Grid.Column="5"/>
+            <Label HorizontalAlignment="Left" x:Name="info_3" VerticalAlignment="Top" Margin="58.667,116,-59.667,0" Width="205" Height="25" Grid.Column="5"/>
+            <Label HorizontalAlignment="Left" x:Name="info_4" VerticalAlignment="Top" Margin="58.667,151,-59.667,0" Width="205" Height="25" Grid.Column="5" Grid.RowSpan="2"/>
+            <Label HorizontalAlignment="Left" x:Name="info_5" VerticalAlignment="Top" Margin="57.667,18,-58.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" x:Name="info_6" VerticalAlignment="Top" Margin="57.667,47,-58.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" x:Name="info_7" VerticalAlignment="Top" Margin="57.667,77,-58.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" x:Name="info_8" VerticalAlignment="Top" Margin="58.667,96,-59.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" x:Name="info_9" VerticalAlignment="Top" Margin="58.667,122,-59.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
+            <TextBox HorizontalAlignment="Left" Height="23" x:Name="domain_10" Margin="6,152,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="3"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="64.333,152,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.67,2.312" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="2"/>
+            <Label HorizontalAlignment="Left" x:Name="info_10" VerticalAlignment="Top" Margin="58.667,152,-59.667,0" Width="205" Height="25" Grid.Column="5" Grid.Row="1"/>
+            <Label Content="" x:Name="website_10"  HorizontalAlignment="Left" Margin="15.667,152,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
         </Grid>
 
     </Viewbox>
