@@ -2,7 +2,7 @@
 using System.Net;
 using System.Net.Mail;
 using System.Windows;
-using System.Threading;
+
 
 namespace website_Checker_GUI
 {
@@ -12,9 +12,12 @@ namespace website_Checker_GUI
 
 
         internal const string server = "smtp.gmail.com";
+        internal string domain;
 
         internal static int CreateMessage(string server)
         {
+
+
 
             string to = "tahboub252@gmail.com";
             string from = "tahboub252@gmail.com";
@@ -59,12 +62,12 @@ namespace website_Checker_GUI
                 return isReachable;
             }
 
-            HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create(domain);
-            httpReq.AllowAutoRedirect = false;
+
 
             try
             {
-
+                HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create(domain);
+                httpReq.AllowAutoRedirect = false;
                 HttpWebResponse httpRes = (HttpWebResponse)httpReq.GetResponse();
 
                 if (httpRes.StatusCode != HttpStatusCode.NotFound)
@@ -95,9 +98,5 @@ namespace website_Checker_GUI
             return isReachable;
 
         }
-
-
-
-
     }
 }

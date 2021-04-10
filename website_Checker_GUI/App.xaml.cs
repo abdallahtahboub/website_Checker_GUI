@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using System.Windows;
+using website_Checker_GUI;
+using System.Windows.Forms.Design;
 
-namespace website_Checker_GUI
+namespace BackgroundApplication
 {
-    /// <summary>
-    /// Interaktionslogik für "App.xaml"
-    /// </summary>
+
     public partial class App : Application
     {
 

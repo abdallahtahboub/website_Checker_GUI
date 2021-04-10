@@ -1,19 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 
 namespace website_Checker_GUI
@@ -68,10 +58,7 @@ namespace website_Checker_GUI
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-
-
-
-
+          
 
 
             noContent_1.Visibility = Visibility.Visible;
@@ -391,6 +378,7 @@ namespace website_Checker_GUI
             }
             if (test_9 == 1)
             {
+                
 
                 website_9.Background = new SolidColorBrush(Colors.Green);
                 website_9.Visibility = Visibility.Visible;
@@ -440,6 +428,7 @@ namespace website_Checker_GUI
                 info_10.Visibility = Visibility.Visible;
                 checker.CreateMessage(myserver);
             }
+
 
 
 
