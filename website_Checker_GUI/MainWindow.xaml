@@ -21,7 +21,7 @@
                 <ColumnDefinition Width="76*"/>
                 <ColumnDefinition Width="193*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Check Websites" HorizontalAlignment="Left" VerticalAlignment="Top" Width="99" Margin="65.333,23,0,0" Height="26" RenderTransformOrigin="0.412,-0.28" FontFamily="Segoe UI Semibold" Grid.Column="5" Click="Button_Click"/>
+            <Button Content="Check Websites" ClickMode="Hover" HorizontalAlignment="Left" VerticalAlignment="Top" Width="99" Margin="65.333,23,0,0" Height="26" RenderTransformOrigin="0.412,-0.28" FontFamily="Segoe UI Semibold" Grid.Column="5" Click="Button_Click"/>
             <TextBox HorizontalAlignment="Left" Height="23" x:Name="domain_1" Margin="6,60,0,0" TextWrapping="Wrap" Text="http://www." VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged_3" Grid.Column="3">
                 <TextBox.Background>
                     <ImageBrush/>
@@ -58,7 +58,7 @@
             <Label Content="" x:Name="website_9"  HorizontalAlignment="Left" Margin="15.667,124,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.523,2.564" Height="23" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
             <Label HorizontalAlignment="Left" x:Name="info_1" VerticalAlignment="Top" Margin="59.333,58,-71.667,0" Width="205" Height="25" Grid.Column="5"/>
 
-            <Button Content="Schließen"  x:Name="btnExit" Grid.Column="5" HorizontalAlignment="Left" Margin="65.333,211,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="btnExit_Click" Height="22"/>
+            <Button Content="Schließen" ClickMode="Press"  x:Name="btnExit" Grid.Column="5" HorizontalAlignment="Left" Margin="65.333,211,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="btnExit_Click" Height="22"/>
             <Label Grid.Column="2" HorizontalAlignment="Left" Margin="73,215,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90" Grid.ColumnSpan="2" Height="10"/>
             <Label Grid.Column="2" x:Name="noContent_1" HorizontalAlignment="Left" Margin="73,211,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90" RenderTransformOrigin="2.841,0.806" Grid.ColumnSpan="2" Height="36">
                 <Label Content="" x:Name="noContent_2" Width="80"/>
