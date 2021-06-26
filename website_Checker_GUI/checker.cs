@@ -32,7 +32,7 @@ namespace website_Checker_GUI
                 {
 
                     Port = 587,
-                    Credentials = new NetworkCredential("tahboub252@gmail.com", "lifehaschanged1"),
+                    Credentials = new NetworkCredential("email", "password"),
                     EnableSsl = true,
 
                 };
